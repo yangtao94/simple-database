@@ -1,0 +1,37 @@
+{
+	"schema": {
+		"name": "students",
+		"fields": [{
+				"fieldName": "puid",
+				"type": "INTEGER"
+			},
+			{
+				"fieldName": "student_name",
+				"type": "STRING"
+			},
+			{
+				"fieldName": "gpa",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"constraints": [{
+		"type": "UNIQUE",
+		"fieldName": "puid",
+		"predicates": null
+	},
+	{
+		"type": "CHECK",
+		"fieldName": "puid",
+		"predicates": [{
+			"fieldName": "puid",
+			"rhs": 0,
+			"operator": "GTE"
+		}]
+	},
+	{
+		"type": "NOT_NULL",
+		"fieldName": "puid",
+		"predicates": null
+	}]
+}
