@@ -14,9 +14,7 @@
 
 <p align="center">
 
-An object oriented design of a database.
-
-    <br> 
+An object oriented design of a database.<br> 
 </p>
 
 ## 📝 Table of Contents
